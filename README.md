@@ -112,3 +112,23 @@ Push All code
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 5000
 ```
+
+# Vid6: Handle Nested Routes
+
+```text
+Create a new branch form fastAPi_vid5
+cd /mnt/e/Mini_Rag_Project/Mini_Rag_Application
+conda activate mini-rag
+
+create routes folder +  __init__.py + base.py
+
+test Prefix --> http://localhost:5000/api/v1/
+
+add python-dotenv==1.0.1
+pip install -r requirements.txt
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
+add async  to def
+
+Push All code 
+```
+
