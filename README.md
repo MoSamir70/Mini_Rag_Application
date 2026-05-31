@@ -83,3 +83,32 @@ r -> install all packages in ones
 cp .env.example .env
 ```
 Set your environment variables in the .env file. Like OPENAI_API_KEY value.
+
+# Vid5 : Welcome Fast API
+
+```text
+Create a new branch form tut-001
+cd /mnt/e/Mini_Rag_Project/Mini_Rag_Application
+conda activate mini-rag
+uvicorn main:app
+Browser --> http://127.0.0.1:8000/welcome
+Swagger --> http://127.0.0.1:8000/docs
+Postman --> new collection + variables = api + http://127.0.0.1:8000 then add request + {{api}}/welcome
+api variable Error -> Hover on {{api}} and variable again 
+--> exist then do 
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
+
+---> Postman
+http://0.0.0.0:5000
+http://localhost:5000/
+http://localhost:5000/welcome
+
+--> can not find current value in Variables
+--> Export Collection as Json in Assests Folder
+
+Push All code 
+```
+
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
